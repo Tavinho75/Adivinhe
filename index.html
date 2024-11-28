@@ -53,6 +53,8 @@
   const numA = Math.floor(Math.random() * 100);
 
   function verificar() {
+num.reset();
+
     const num = document.getElementById("num").value;
     const suaresposta = document.getElementById("suaresposta");
     const atencao = document.getElementById("atencao");
@@ -62,7 +64,6 @@ suaresposta.innerHTML = "";
 suaresposta.innerHTML = "Sua resposta é: ";
     suaresposta.innerHTML += num;
 const recarregar = document.getElementById("recarregar");
-num.reset();
 
     if (num < (numA - 10) || num > (numA + 10)) {
       erro.style.display = 'block';
