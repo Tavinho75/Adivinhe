@@ -30,6 +30,10 @@
       background-color: rgb(0, 255, 0);
       display: none;
     }
+
+    #recarregar {
+    display: none;
+}
   </style>
 </head>
 
@@ -40,7 +44,7 @@
   <div class="c-card c-card-warning" id="atencao">Está quase lá!</div>
   <div class="c-card c-card-error" id="erro">Você errou.</div>
   <div class="c-card c-card-sucess" id="sucesso">Parabéns! Você acertou. A resposta é: </div>
-  <input type="button" onclick="location.reload()" value="Jogar Novamente">
+  <input type="button" onclick="location.reload()" value="Jogar Novamente" id="recarregar">
 
 </body>
 
@@ -49,23 +53,23 @@
   const numA = Math.floor(Math.random() * 100);
 
   function verificar() {
+suaresposta.innerHTML = ""
+suaresposta.innerHTML = "Parabéns! Você acertou. A resposta é: "
     const num = document.getElementById("num").value;
     const suaresposta = document.getElementById("suaresposta");
     const atencao = document.getElementById("atencao");
     const erro = document.getElementById("erro");
     const sucesso = document.getElementById("sucesso");
+ simbiote em uma garrafa
     suaresposta.innerHTML += num;
-    atencao.style.display = 'none';
-    erro.style.display = 'none';
-    erro.innerHTML = "Você errou. A resposta é: ";
-    sucesso.style.display = 'none';
-    sucesso.innerHTML = "Parabéns! Você acertou. A resposta é: ";
+cost recarregar = document.getElementById("recarregar");
 
     if (num < (numA - 10) || num > (numA + 10)) {
       erro.style.display = 'block';
     } else if (num == numA) {
       sucesso.style.display = 'block';
       sucesso.innerHTML += numA;
+recarregar.style.display = 'block'
     } else if (num > (numA - 10) || num < (numA + 10)) {
       atencao.style.display = 'block';
     }
