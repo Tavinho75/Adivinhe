@@ -1,5 +1,5 @@
  .caixas {
-     background-color: rgb(141, 214, 214);
+     background-color: #8dd6d6;
      padding: 20px;
      border-radius: 4px;
      margin-top: 20px;
@@ -9,16 +9,29 @@
  }
 
  .caixas-warning {
-     background-color: rgb(255, 165, 0);
+     background-color: #ffa500;
      display: none;
  }
 
  .caixas-error {
-     background-color: rgb(255, 0, 0);
+     background-color: #fc2525;
+     color: white;
      display: none;
  }
 
  .caixas-sucess {
-     background-color: rgb(0, 255, 0);
+     background-color: #53f853;
      display: none;
+ }
+
+ .botoes {
+     display: block;
+     padding: 10px;
+     padding-bottom: 11px;
+     background-color: #8dd6d6;
+ }
+
+ #num,
+ #verificar {
+    display: inline-block;
  }

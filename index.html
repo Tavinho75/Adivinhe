@@ -9,15 +9,15 @@
 </head>
 
 <body>
-  <input type="number" id="num">
-  <input type="submit" onclick="verificar()" value="Verificar">
+  <input type="number" class="botoes" id="num" min="1" max="100">
+  <input type="submit" class="botoes" onclick="verificar()" value="Verificar" id="verificar">
   <div class="caixas" id="suaresposta">Sua resposta é: </div>
   <div class="caixas caixas-warning" id="atencao">Está quase lá!</div>
   <div class="caixas caixas-error" id="erro">Você errou.</div>
   <div class="caixas caixas-sucess" id="sucesso">Parabéns! Você acertou. A resposta é: </div>
-  <input type="button" onclick="location.reload()" value="Jogar Novamente">
-
+  <input type="button" class="botoes" onclick="location.reload()" value="Jogar Novamente" id="recarregar">
+  <div>Vidas: </div>
+  <div id="vidas">8</div>
+  <script src="script.js"></script>
 </body>
-<script src="script.js"></script>
-
 </html>
