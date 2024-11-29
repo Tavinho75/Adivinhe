@@ -31,7 +31,7 @@ function verificar() {
   }
 
   if (lives == 0) {
-    alert("Você perdeu todas as vidas. Reinicie o jogo.");
-    document.getElementById("recarregar").style.display = 'block';
+    window.alert("Você perdeu todas as vidas. Reinicie o jogo.");
+    location.reload();
   }
 }
