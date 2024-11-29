@@ -1,6 +1,5 @@
 const numA = Math.floor(Math.random() * 100);
 let lives = 8;
-document.getElementById("recarregar").style.display = 'none';
 
 function verificar() {
   const num = document.getElementById("num").value;
