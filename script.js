@@ -1,5 +1,6 @@
 const numA = Math.floor(Math.random() * 100);
 let lives = 8;
+document.getElementById("recarregar").style.display = 'none';
 
 function verificar() {
   const num = document.getElementById("num").value;
@@ -23,8 +24,7 @@ function verificar() {
       vidas.innerHTML = lives;
     } else if (num == numA) {
       sucesso.style.display = 'block';
-      sucesso.innerHTML += numA;
-      document.getElementById("recarregar").style.display = 'block';
+      sucesso.innerHTML += numA; document.getElementById("recarregar").style.display = 'block';
     } else if (num > (numA - 10) || num < (numA + 10)) {
       atencao.style.display = 'block';
     }
