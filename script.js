@@ -23,8 +23,7 @@ function verificar() {
       vidas.innerHTML = lives;
     } else if (num == numA) {
       sucesso.style.display = 'block';
-      sucesso.innerHTML += numA;
-      document.getElementById("recarregar").style.display = 'block';
+      sucesso.innerHTML += numA; document.getElementById("recarregar").style.display = 'block';
     } else if (num > (numA - 10) || num < (numA + 10)) {
       atencao.style.display = 'block';
     }

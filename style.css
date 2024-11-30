@@ -40,3 +40,6 @@ div {
     display: inline-block;
     background-color: #fc2525;
 }
+#recarregar {
+display: none;
+}
