@@ -35,3 +35,8 @@
  #verificar {
     display: inline-block;
  }
+
+div {
+    display: inline-block;
+    background-color: #fc2525;
+}
