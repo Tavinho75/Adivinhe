@@ -56,10 +56,11 @@ function verificar() {
   }
 
   if (lives == 0) {
-    window.alert("Você perdeu todas as vidas. Reiniciando o jogo.");
     numdiv.style.display = 'none';
     document.getElementById("recarregar").style.display = 'block';
     document.getElementById("resposta").innerHTML = `A resposta era: ${numA}`;
+    window.alert("Você perdeu todas as vidas. Recomece o jogo.");
+
   } else {
     atualizarCorVidas();
   }
