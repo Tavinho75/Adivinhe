@@ -14,8 +14,6 @@ function verificar() {
   const atencao = document.getElementById("atencao");
   const erro = document.getElementById("erro");
   const sucesso = document.getElementById("sucesso");
-  const vidas = document.getElementById("vidas");
-  // document.getElementById("resposta").innerHTML = `A resposta era: ${numA}`;
 
   suaResposta.innerHTML = `Sua resposta é: ${num}`;
   atencao.style.display = 'none';
@@ -65,18 +63,3 @@ function verificar() {
     atualizarCorVidas();
   }
 }
-
-function atualizarCorVidas() {
-  const vidasCora = document.getElementById("vidasCora");
-  vidasCora.innerHTML = '';
-
-  for (let i = 0; i < lives; i++) {
-    const cor = (i < 3) ? 'blue' : 'white';
-    const coracao = document.createElement("span");
-    coracao.style.color = cor;
-    coracao.innerHTML = '❤️';
-    vidasCora.appendChild(coracao);
-  }
-}
-
-atualizarCorVidas();
