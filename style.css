@@ -33,13 +33,20 @@
 
  #num,
  #verificar {
-    display: inline-block;
+     display: inline-block;
  }
 
-div {
-    display: inline-block;
-    background-color: #fc2525;
-}
-#recarregar {
-display: none;
-}
+ #nvidas,
+ .divcora {
+     display: inline-block;
+ }
+
+ #recarregar {
+     margin-bottom: 15px;
+     display: none;
+ }
+
+ .fa-solid {
+     color: black;
+     display: inline-block;
+ }

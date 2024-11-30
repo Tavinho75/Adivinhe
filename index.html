@@ -5,19 +5,49 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Teste de verificação</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+    integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <input type="number" class="botoes" id="num" min="1" max="100">
-  <input type="submit" class="botoes" onclick="verificar()" value="Verificar" id="verificar">
+  <div id="numero">
+    <input type="number" class="botoes" id="num" min="1" max="100">
+    <input type="submit" class="botoes" onclick="verificar()" value="Verificar" id="verificar">
+  </div>
   <div class="caixas" id="suaresposta">Sua resposta é: </div>
   <div class="caixas caixas-warning" id="atencao">Está quase lá!</div>
   <div class="caixas caixas-error" id="erro">Você errou.</div>
   <div class="caixas caixas-sucess" id="sucesso">Parabéns! Você acertou. A resposta é: </div>
   <input type="button" class="botoes" onclick="location.reload()" value="Jogar Novamente" id="recarregar">
   <div id="nvidas">Vidas: </div>
-  <div id="vidas">8</div>
+  <div class="divcora" id="divcora1">
+    <i class="fa-solid fa-heart"></i>
+  </div>
+  <div class="divcora" id="divcora2">
+    <i class="fa-solid fa-heart"></i>
+  </div>
+  <div class="divcora" id="divcora3">
+    <i class="fa-solid fa-heart"></i>
+  </div>
+  <div class="divcora" id="divcora4">
+    <i class="fa-solid fa-heart"></i>
+  </div>
+  <div class="divcora" id="divcora5">
+    <i class="fa-solid fa-heart"></i>
+  </div>
+  <div class="divcora" id="divcora6">
+    <i class="fa-solid fa-heart"></i>
+  </div>
+  <div class="divcora" id="divcora7">
+    <i class="fa-solid fa-heart"></i>
+  </div>
+  <div class="divcora" id="divcora8">
+    <i class="fa-solid fa-heart"></i>
+  </div>
+  <!-- <div class="divcora" id="resposta"></div> -->
   <script src="script.js"></script>
 </body>
+
 </html>
